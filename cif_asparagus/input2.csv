@@ -1,0 +1,12 @@
+Description,label,variable,distribution,lower,median,upper
+,n,n,const,1,,1
+,var_cv,var_CV,tnorm_0_1,0.01,,0.05
+,,,,,
+,yield,yield,posnorm,90,,100
+,season length,season_length,posnorm,70,,80
+,,,,,
+,rain_prob,rain_prob,tnorm_0_1,0.1,,0.5
+,strong_rain_prob,strong_rain_prob,tnorm_0_1,0.05,,0.1
+,storm_prob,storm_prob,tnorm_0_1,0.05,,0.1
+,frost_prob,frost_prob,tnorm_0_1,0.2,,0.4
+,chill_requirement,chill_requirement,tnorm_0_1,0.6,,0.9

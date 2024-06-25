@@ -1,0 +1,33 @@
+---
+title: "Overview for the project Climate Impact Forecasting"
+subtitle: "part 1: Asparagus"
+author: "by JBSL"
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+output: 
+  html_document:
+        toc: true
+        toc_float: false
+        toc_depth: 3
+        number_sections: true
+        
+        code_folding: hide
+        code_download: true
+        
+        fig_height: 3
+        fig_width: 5
+        fig_align: "center"
+        
+        highlight: pygments
+        theme: cerulean
+        
+        keep_md: true
+        
+
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+#Introduction
