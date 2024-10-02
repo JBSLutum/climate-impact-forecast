@@ -7,6 +7,7 @@ library(chillR)
 library(bayesplot)
 library(ggridges)
 library(ggpubr)
+library(tidyverse)
 #model1####
 model_baseline<-read.csv("results_m1/mcSimulationResults.csv")
 
@@ -43,6 +44,10 @@ df_long_w <- model_baseline %>%
                names_to = "scenario",
                values_to = "work_sim")
 
+df_long_e <- model_baseline %>%
+  pivot_longer(cols = starts_with("util"),
+               names_to = "scenario",
+               values_to = "utility")
 #plots####
 #yield
 ggplot(df_long_y, aes(yield_sim, scenario, fill=scenario))+
@@ -56,6 +61,12 @@ ggplot(df_long_q, aes(quality_sim, scenario, fill=scenario))+
 ggplot(df_long_w, aes(work_sim, scenario, fill=scenario))+
   #geom_density(position = "identity")+
   geom_density_ridges()
+
+#util
+ggplot(df_long_e, aes(utility, scenario, fill=scenario))+
+  #geom_density(position = "identity")
+  #geom_density_ridges()
+  geom_boxplot()
 
 #model2####
 model_baseline2<-read.csv("results_m2/mcSimulationResults.csv")
