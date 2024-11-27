@@ -2,8 +2,10 @@ Description,label,variable,distribution,lower,median,upper
 ,n,n,const,1,,1
 ,var_cv,var_CV,tnorm_0_1,0.01,,0.05
 ,,,,,
-,yield,yield,posnorm,90,,100
+,yield,yield,posnorm,90,,110
+,quality,quality,posnorm,90,,100
 ,season length,season_length,posnorm,70,,80
+,temp_sum,temp_sum,posnorm,300,,400
 ,,,,,
 ,rain_prob,rain_prob,tnorm_0_1,0.1,,0.5
 ,strong_rain_prob,strong_rain_prob,tnorm_0_1,0.05,,0.1
