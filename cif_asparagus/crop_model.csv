@@ -1,0 +1,6 @@
+Description,label,variable,distribution,lower,median,upper
+,Plants per meter,plants_lfm,norm,4,,7
+,Average weight,avg_weight_spear,norm,0.06,,0.08
+,Average spear count,avg_spears_plant,norm,6,,10
+,,plants_hectar,norm,25000,,27500
+,,chill_threshold,norm,300,,400
