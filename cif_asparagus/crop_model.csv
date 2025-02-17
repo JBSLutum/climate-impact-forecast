@@ -3,4 +3,15 @@ Description,label,variable,distribution,lower,median,upper
 ,Average weight,avg_weight_spear,norm,0.06,,0.08
 ,Average spear count,avg_spears_plant,norm,6,,10
 ,,plants_hectar,norm,25000,,27500
+,,row_spacing,norm,180,,230
+,,growth_daily,norm,5,,10
+,,,,,,
+,,,,,,
 ,,chill_threshold,norm,300,,400
+,,growth_start,norm,12,,14
+,,ideal_temp,norm,20,,22
+,,max_temp,norm,25,,26
+,,,,,,
+,,risk_frost,,,,
+,,risk_storm,,,,
+,,risk_,,,,
